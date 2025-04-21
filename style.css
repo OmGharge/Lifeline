@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0caff, #ffe4f7);
+  color: #4b006e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+.slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide.active {
+  display: flex;
+}
+.next-btn, #yesButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+  transition: transform 0.2s;
+}
+.next-btn:hover, #yesButton:hover {
+  transform: scale(1.05);
+}
+#loveLetter p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
